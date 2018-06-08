@@ -622,9 +622,8 @@ function(e) {
             for (var o = 0; o < t.length; o++)
                 certy.portfolio.initGrid(e(t[o]));
             e(document).on("click", ".pf-project", function() {
-                var t = e(this).attr("href");
-                return certy.portfolio.openPopup(e(t)),
-                !1
+                var link = e(this).data('href');
+                window.open(link);
             }),
             e(document).on("click", ".pf-rel-href", function() {
                 var t = e(this).attr("href");
